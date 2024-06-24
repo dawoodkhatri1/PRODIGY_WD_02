@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="plvsai.css">
+</head>
+<body>
+    <div id="main" class="container">
+        <h1>TIC TAC TOE</h1>
+        <p id="ins">
+            Game starts by just Tap on
+            box<br><br>First Player starts as
+            <b>Player X </b>And Second Player is
+            <b>Ai</b>
+        </p>
+        <br><br>
+        <div class="ui">
+            <div class="row">
+                <input type="button" id="b1"
+                       class="cell" onclick="playerMove('b1')"
+                       readonly>
+                <input type="button" id="b2"
+                       class="cell" onclick="playerMove('b2')"
+                       readonly>
+                <input type="button" id="b3" class="cell"
+                       onclick="playerMove('b3')"
+                       readonly>
+            </div>
+            <div class="row">
+                <input type="button" id="b4"
+                       class="cell" onclick="playerMove('b4')"
+                       readonly>
+                <input type="button" id="b5"
+                       class="cell" onclick="playerMove('b5')"
+                       readonly>
+                <input type="button" id="b6"
+                       class="cell" onclick="playerMove('b6')"
+                       readonly>
+            </div>
+            <div class="row">
+                <input type="button" id="b7"
+                       class="cell" onclick="playerMove('b7')"
+                       readonly>
+                <input type="button" id="b8"
+                       class="cell" onclick="playerMove('b8')"
+                       readonly>
+                <input type="button" id="b9"
+                       class="cell" onclick="playerMove('b9')"
+                       readonly>
+            </div>
+        </div>
+        <br><br><br>
+
+        <button id="but" onclick="myfunc_2()">
+            RESET
+        </button>
+        <br><br>
+        <p id="print"></p>
+    </div>
+	<script src="plvsai.js"></script>
+</body>
+
+</html>
