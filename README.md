@@ -5,19 +5,19 @@ You can run the files in vscode and notepad++.
 The main files are:
 
 > index.html
-> style.css
+>> style.css
 
 The player vs player files are:
 
 > next_index.html
-> plvspl.css
-> plvspl.js
+>> plvspl.css
+>>> plvspl.js
 
 The player vs ai files are:
 
 > another_index.html
-> plvsai.css
-> plvsai.js
+>> plvsai.css
+>>> plvsai.js
 
 The output of the main file is:
 
