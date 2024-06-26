@@ -4,7 +4,7 @@ function playerMove(id) {
     if (button.value === "") { 
         button.value = "X";
         button.disabled = true; 
-        if (!checkWin("X")) { 
+        if (!checkWin("X")) {
             aiMove();
         }
     }
@@ -48,9 +48,10 @@ function checkWin(player) {
     // Check if any win condition is met
     for (var i = 0; i < winConditions.length; i++) {
         var condition = winConditions[i];
-        if (condition[0] === player && condition[1] === player && condition[2] === player) {
-			document.getElementById('print')
-            .innerHTML = player + " wins!";
+        if (condition[0] === player && condition[1] === player && condition[2] === player ) {
+            document.getElementById('print')
+                .innerHTML = player + " wins!";
+            disableAllButtons();
             return true;
         }
     }
@@ -69,4 +70,12 @@ function checkWin(player) {
 function myfunc_2() {
     location.reload();
     b1 = b2 = b3 = b4 = b5 = b6 = b7 = b8 = b9 = '';
+}
+
+// Function to disable all buttons (to end the game)
+function disableAllButtons() {
+    var buttons = document.querySelectorAll("input[type='button']");
+    buttons.forEach(function (button) {
+        button.disabled = true;
+    });
 }
