@@ -34,3 +34,7 @@ Output of the player vs ai file is:
 If you want to play online. Here's a link directly to my Tic Tac Toe game:
 
 > https://dawoodkhatri1.github.io/PRODIGY_WD_02/
+
+## License
+
+[MIT License](LICENSE)
